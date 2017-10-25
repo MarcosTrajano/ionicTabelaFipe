@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Marcas</ion-title>
   </ion-navbar>
+  <ion-searchbar
+  (ionInput)="filterItems($event)"
+  placeholder="informe a marca">
+  </ion-searchbar>
 </ion-header>
-
 <ion-content>
-  <ion-list>
+  <ion-list no-padding>
     <ion-item *ngFor="let item of marcas" (click)="carros(item.id)">
       {{item.name}}
     </ion-item>

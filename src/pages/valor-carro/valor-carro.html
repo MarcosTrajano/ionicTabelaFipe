@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Carro</ion-title>
   </ion-navbar>
 
@@ -15,25 +15,25 @@
 
 <ion-content no-padding>
   <ion-card>
-    <ion-card-header>
-        <label class="title">{{carro.veiculo}}</label>
+    <ion-card-header class="title">
+        <label>{{carro.veiculo}}</label>
         <p>{{carro.ano_modelo}}<p>
     </ion-card-header>
     <ion-list>
-      <ion-item>
-        {{carro.marca}}
+      <ion-item class="item">
+        <label>{{carro.marca}}</label>
         <p>marca</p>
       </ion-item>
-      <ion-item>
-        {{carro.combustivel}}
+      <ion-item class="item">
+        <label>{{carro.combustivel}}</label>
         <p>Combustivel</p>
       </ion-item>
       <ion-item>
-        {{carro.referencia}}
+        <label>{{carro.referencia}}</label>
         <p>Referencia</p>
       </ion-item>
       <ion-item>
-        {{carro.fipe_codigo}}
+        <label>{{carro.fipe_codigo}}</label>
         <p>Codigo Fipe</p>
       </ion-item>
       <ion-item class="preco">

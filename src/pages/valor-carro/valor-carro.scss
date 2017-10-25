@@ -3,7 +3,25 @@
   margin-left: 21%;
   font-size: 170%;
   font-weight: bold;
+  font-family: sans-serif;
+  color: color($colors, secondary);
 }
-.title{
+.title label{
   font-size: 140%;
+  color: color($colors, secondary);
+  font-family: sans-serif;
+}
+.title p{
+  color: color($colors, divider);
+  font-family: sans-serif;
+}
+
+.item label{
+  color: color($colors, accent);
+  font-family: sans-serif;
+}
+
+.item p{
+  color: color($colors, divider);
+  font-family: sans-serif;
 }
